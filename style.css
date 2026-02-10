@@ -14,15 +14,15 @@
 
 .navright {
   display: flex;
-  flex-direction: column; 
-  align-items: flex-end;
+  flex-direction: column;
+  align-items: last baseline;
+  gap: 8px;
 }
 
 .navright a {
   color: white;
   text-decoration: none;
   font-size: 14px;
-  margin-bottom: 2px;
 }
 
 .navright a:hover {
@@ -32,5 +32,159 @@
 .words {
   list-style-type: disc;
   padding-left: 25px;
-  line-height: 1.6; /* Adds breathing room between lines */
+  line-height: 1.6;
+  /* Adds breathing room between lines */
+}
+
+/*----------------------------------------------------------------------------------*/
+
+/* Container styling */
+.form-container {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+
+/* Input group spacing */
+.input-group {
+  margin-bottom: 15px;
+}
+
+/* Labels */
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Inputs */
+.input-group input {
+  width: 50%;
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Button container */
+.button-group {
+  display: flex;
+  justify-content: left;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+/* Signup button */
+.signup-btn {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Hover for signup button */
+.signup-btn:hover {
+  background-color: darkgreen;
+}
+
+/* Cancel button */
+.cancel-btn {
+  background-color: gray;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Hover for cancel button */
+.cancel-btn:hover {
+  background-color: red;
+}
+
+/*-----------------------Dropdown-----------------------------------------------------------*/
+
+/* Dropdown container */
+.dropdown {
+  position: relative;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #333;
+  min-width: 150px;
+  border-radius: 4px;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+/* Links inside dropdown */
+.dropdown-menu a {
+  display: block;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+}
+
+/* Hover effect */
+.dropdown-menu a:hover {
+  background-color: #555;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-separator {
+  height: 1px;
+  background-color: #666;
+  margin: 5px 0;
+}
+
+/* Style logout differently */
+.dropdown-menu a.logout {
+  color: #e74c3c;
+  /* red text to indicate danger */
+}
+
+
+
+.box {
+  width: 300px;
+  height: 150px;
+  background-color: #ffffff;
+  border: 1px solid #333;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 8px;
+
+}
+
+.edit-btn {
+  background-color: transparent;
+  color: #00bdde;
+  border: 1px solid #00bdde;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+/* Optional: green background on hover */
+.edit-btn:hover {
+  background-color: #00bdde;
+  color: white;
 }
