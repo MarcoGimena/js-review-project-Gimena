@@ -188,3 +188,58 @@
   background-color: #00bdde;
   color: white;
 }
+
+
+/* verify button*/
+.verify-button {
+  display: flex;
+  justify-content: left;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.emaiverify {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.gotologin {
+  background-color: gray;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* login button*/
+.login-btn {
+  background-color: #0082fc;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Employees table*/
+
+table th,
+table td {
+  vertical-align: middle;
+}
+
+.card {
+  border-radius: 8px;
+}
+
+.card-header {
+  border-bottom: 1px solid #ddd;
+}
