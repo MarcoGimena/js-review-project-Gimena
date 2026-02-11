@@ -38,18 +38,18 @@
 <div class="container mt-4">
 
     <div class="d-flex justify-content-between align-items-center mb-3">
-        <h3>Employees</h3>
-        <button class="btn btn-success">+ Add Employee</button>
+        <h3>Accounts</h3>
+        <button class="btn btn-success">+ Add accounts</button>
     </div>
 
     <!-- TABLE -->
     <table class="table table-bordered text-center">
         <thead class="table-light">
             <tr>
-                <th>ID</th>
                 <th>Name</th>
-                <th>Position</th>
-                <th>Dept</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th>Verified</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -63,35 +63,35 @@
     <!-- FORM CARD -->
     <div class="card mt-4 mb-5">
         <div class="card-header bg-white">
-            <strong>Add/Edit Employee</strong>
+            <strong>Add/Edit Account</strong>
         </div>
 
         <div class="card-body">
 
             <form>
                 <div class="mb-3">
-                    <label>Employee ID</label>
+                    <label>First Name</label>
                     <input type="text" class="form-control">
                 </div>
 
                 <div class="mb-3">
-                    <label>User Email</label>
+                    <label>Last Name</label>
                     <input type="email" class="form-control">
                 </div>
 
                 <div class="mb-3">
-                    <label>Position</label>
+                    <label>Email</label>
+                    <input type="email" class="form-control">
+                </div>
+
+                <div class="mb-3">
+                    <label>Password</label>
+                    <input type="password" class="form-control" value="Engineering">
+                </div>
+
+                <div class="mb-3">
+                    <label>Role</label>
                     <input type="text" class="form-control">
-                </div>
-
-                <div class="mb-3">
-                    <label>Department</label>
-                    <input type="text" class="form-control" value="Engineering">
-                </div>
-
-                <div class="mb-3">
-                    <label>Hire Date</label>
-                    <input type="date" class="form-control">
                 </div>
 
                 <button class="btn btn-primary">Save</button>
