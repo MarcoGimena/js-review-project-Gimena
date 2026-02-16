@@ -1,3 +1,45 @@
+/* Page visibility */
+.page {
+  display: none;
+}
+
+.page.active {
+  display: block;
+}
+
+/* Auth roles */
+body.not-authenticated .role-logged-in {
+  display: none;
+}
+
+body.authenticated .role-logged-out {
+  display: none;
+}
+
+/* Admin role */
+.role-admin {
+  display: none;
+}
+
+body.is-admin .role-admin {
+  display: block;
+}
+
+/* --------------------------------------- */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global font for the whole page */
+html,
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+}
+
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -231,15 +273,219 @@
 
 /* Employees table*/
 
+/* Page styling */
+body {
+  background-color: #f8f9fa;
+}
+
+/* Table */
 table th,
 table td {
   vertical-align: middle;
 }
 
+/* Card Styling */
 .card {
   border-radius: 8px;
 }
 
-.card-header {
+/* Form Inputs */
+form label {
+  font-weight: 500;
+}
+
+/* Buttons */
+.btn-save {
+  margin-right: 5px;
+}
+
+/* Optional hover effect for inputs */
+.form-control:focus {
+  box-shadow: 0 0 4px rgba(52, 152, 219, 0.6);
+}
+
+/* Optional: Add subtle border to the whole container */
+.container {
+  max-width: 850px;
+}
+
+
+
+
+/*Departments*/
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.add-btn {
+  background-color: #28a745;
+  border: none;
+  padding: 8px 15px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+
+.add-btn:hover {
+  background-color: #218838;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+th,
+td {
+  padding: 12px;
   border-bottom: 1px solid #ddd;
+}
+
+th {
+  text-align: left;
+  background: #fff;
+}
+
+tr:nth-child(even) {
+  background: #f2f2f2;
+}
+
+.edit-btn {
+  padding: 6px 12px;
+  border: 1px solid #007bff;
+  background: #e6f0ff;
+  color: #007bff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.edit-btn:hover {
+  background: #d9e9ff;
+}
+
+.delete-btn {
+  padding: 6px 12px;
+  border: 1px solid #dc3545;
+  background: #ffe6e9;
+  color: #dc3545;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.delete-btn:hover {
+  background: #ffdadf;
+}
+
+
+
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-overlay:target {
+  display: flex;
+}
+
+.modal-content {
+  background: #fff;
+  width: 420px;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.close {
+  font-size: 22px;
+  text-decoration: none;
+  color: #000;
+}
+
+.form-label {
+  font-weight: 500;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Items */
+.item-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.item-name {
+  flex: 2;
+  padding: 8px;
+}
+
+.item-qty {
+  width: 60px;
+  padding: 8px;
+  text-align: center;
+}
+
+/* Buttons */
+.btn-add {
+  width: 36px;
+  border: 1px solid #ccc;
+  background: #f8f9fa;
+  cursor: pointer;
+}
+
+.btn-remove {
+  width: 36px;
+  border: 1px solid #dc3545;
+  background: #fff;
+  color: #dc3545;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #0d6efd;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.btn-success {
+  background: #198754;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  text-decoration: none;
 }
