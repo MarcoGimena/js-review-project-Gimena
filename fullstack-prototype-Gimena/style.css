@@ -75,7 +75,6 @@ body {
   list-style-type: disc;
   padding-left: 25px;
   line-height: 1.6;
-  /* Adds breathing room between lines */
 }
 
 /*----------------------------------------------------------------------------------*/
@@ -179,6 +178,15 @@ body {
   text-decoration: none;
 }
 
+/* Keep admin-only dropdown links hidden unless body has is-admin */
+.dropdown-menu a.role-admin {
+  display: none;
+}
+
+body.is-admin .dropdown-menu a.role-admin {
+  display: block;
+}
+
 /* Hover effect */
 .dropdown-menu a:hover {
   background-color: #555;
@@ -198,7 +206,6 @@ body {
 /* Style logout differently */
 .dropdown-menu a.logout {
   color: #e74c3c;
-  /* red text to indicate danger */
 }
 
 
@@ -402,7 +409,7 @@ tr:nth-child(even) {
   z-index: 1000;
 }
 
-.modal-overlay:target {
+.modal-overlay.open {
   display: flex;
 }
 
@@ -466,7 +473,8 @@ tr:nth-child(even) {
   cursor: pointer;
 }
 
-.btn-remove {
+.btn-remove,
+.item-remove {
   width: 36px;
   border: 1px solid #dc3545;
   background: #fff;
@@ -488,4 +496,8 @@ tr:nth-child(even) {
   padding: 6px 10px;
   border-radius: 4px;
   text-decoration: none;
+}
+
+.hidden {
+  display: none;
 }
